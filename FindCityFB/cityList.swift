@@ -1,10 +1,10 @@
 // generated with FlatBuffersSchemaEditor https://github.com/mzaks/FlatBuffersSchemaEditor
 
 public final class CityList {
-    public var cityByCountryCode : [City] = []
-    public var cityByName : [City] = []
+    public var cityByCountryCode : [City?] = []
+    public var cityByName : [City?] = []
     public init(){}
-    public init(cityByCountryCode: [City], cityByName: [City]){
+    public init(cityByCountryCode: [City?], cityByName: [City?]){
         self.cityByCountryCode = cityByCountryCode
         self.cityByName = cityByName
     }
@@ -20,7 +20,7 @@ public extension CityList {
         if(length_cityByCountryCode > 0){
             var index = 0
             while index < length_cityByCountryCode {
-                _result.cityByCountryCode.append(City.create(reader, objectOffset: reader.getVectorOffsetElement(offset_cityByCountryCode!, index: index))!)
+                _result.cityByCountryCode.append(City.create(reader, objectOffset: reader.getVectorOffsetElement(offset_cityByCountryCode!, index: index)))
                 index += 1
             }
         }
@@ -29,7 +29,7 @@ public extension CityList {
         if(length_cityByName > 0){
             var index = 0
             while index < length_cityByName {
-                _result.cityByName.append(City.create(reader, objectOffset: reader.getVectorOffsetElement(offset_cityByName!, index: index))!)
+                _result.cityByName.append(City.create(reader, objectOffset: reader.getVectorOffsetElement(offset_cityByName!, index: index)))
                 index += 1
             }
         }
@@ -86,13 +86,17 @@ public extension CityList {
     }
 }
 public extension CityList {
+    private static var cache : [ObjectIdentifier : Offset] = [:]
     private func addToByteArray(builder : FlatBufferBuilder) -> Offset {
+        if let myOffset = CityList.cache[ObjectIdentifier(self)] {
+            return myOffset
+        }
         var offset1 = Offset(0)
         if cityByName.count > 0{
             var offsets = [Offset?](count: cityByName.count, repeatedValue: nil)
             var index = cityByName.count - 1
             while(index >= 0){
-                offsets[index] = cityByName[index].addToByteArray(builder)
+                offsets[index] = cityByName[index]?.addToByteArray(builder)
                 index -= 1
             }
             try! builder.startVector(cityByName.count)
@@ -108,7 +112,7 @@ public extension CityList {
             var offsets = [Offset?](count: cityByCountryCode.count, repeatedValue: nil)
             var index = cityByCountryCode.count - 1
             while(index >= 0){
-                offsets[index] = cityByCountryCode[index].addToByteArray(builder)
+                offsets[index] = cityByCountryCode[index]?.addToByteArray(builder)
                 index -= 1
             }
             try! builder.startVector(cityByCountryCode.count)
@@ -122,18 +126,20 @@ public extension CityList {
         try! builder.openObject(2)
         try! builder.addPropertyOffsetToOpenObject(1, offset: offset1)
         try! builder.addPropertyOffsetToOpenObject(0, offset: offset0)
-        return try! builder.closeObject()
+        let myOffset =  try! builder.closeObject()
+        CityList.cache[ObjectIdentifier(self)] = myOffset
+        return myOffset
     }
 }
 public final class City {
-    public var contryCode : String? = nil
+    public var countryCode : String? = nil
     public var searchName : String? = nil
     public var name : String? = nil
     public var latitude : Float32 = 0
     public var longitude : Float32 = 0
     public init(){}
-    public init(contryCode: String?, searchName: String?, name: String?, latitude: Float32, longitude: Float32){
-        self.contryCode = contryCode
+    public init(countryCode: String?, searchName: String?, name: String?, latitude: Float32, longitude: Float32){
+        self.countryCode = countryCode
         self.searchName = searchName
         self.name = name
         self.latitude = latitude
@@ -146,7 +152,7 @@ public extension City {
             return nil
         }
         let _result = City()
-        _result.contryCode = reader.getString(reader.getOffset(objectOffset, propertyIndex: 0))
+        _result.countryCode = reader.getString(reader.getOffset(objectOffset, propertyIndex: 0))
         _result.searchName = reader.getString(reader.getOffset(objectOffset, propertyIndex: 1))
         _result.name = reader.getString(reader.getOffset(objectOffset, propertyIndex: 2))
         _result.latitude = reader.get(objectOffset, propertyIndex: 3, defaultValue: 0)
@@ -185,7 +191,7 @@ public extension City {
         }
         let offset2 = try! builder.createString(name)
         let offset1 = try! builder.createString(searchName)
-        let offset0 = try! builder.createString(contryCode)
+        let offset0 = try! builder.createString(countryCode)
         try! builder.openObject(5)
         try! builder.addPropertyToOpenObject(4, value : longitude, defaultValue : 0)
         try! builder.addPropertyToOpenObject(3, value : latitude, defaultValue : 0)
