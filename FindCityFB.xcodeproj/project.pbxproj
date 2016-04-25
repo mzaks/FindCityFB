@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B37FB3C1CCCAF5B00467D4F /* cityList.fbs in Resources */ = {isa = PBXBuildFile; fileRef = 0B37FB3B1CCCAF5B00467D4F /* cityList.fbs */; };
+		0B37FB401CCE8F7200467D4F /* LazyVectorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B37FB3F1CCE8F7200467D4F /* LazyVectorExtension.swift */; };
 		0B952AF31C98B5D1007D705A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B952AF21C98B5D1007D705A /* AppDelegate.swift */; };
 		0B952AF51C98B5D1007D705A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B952AF41C98B5D1007D705A /* ViewController.swift */; };
 		0B952AF81C98B5D1007D705A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B952AF61C98B5D1007D705A /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		0B37FB3B1CCCAF5B00467D4F /* cityList.fbs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cityList.fbs; sourceTree = "<group>"; };
+		0B37FB3F1CCE8F7200467D4F /* LazyVectorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyVectorExtension.swift; sourceTree = "<group>"; };
 		0B952AEF1C98B5D1007D705A /* FindCityFB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindCityFB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B952AF21C98B5D1007D705A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B952AF41C98B5D1007D705A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				0B952AFB1C98B5D1007D705A /* LaunchScreen.storyboard */,
 				0B952AFE1C98B5D1007D705A /* Info.plist */,
 				0B37FB3B1CCCAF5B00467D4F /* cityList.fbs */,
+				0B37FB3F1CCE8F7200467D4F /* LazyVectorExtension.swift */,
 			);
 			path = FindCityFB;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				0B952B0A1C98B6E5007D705A /* cityList.swift in Sources */,
 				0B952AF51C98B5D1007D705A /* ViewController.swift in Sources */,
 				0B952AF31C98B5D1007D705A /* AppDelegate.swift in Sources */,
+				0B37FB401CCE8F7200467D4F /* LazyVectorExtension.swift in Sources */,
 				0B952B0B1C98B6E5007D705A /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
