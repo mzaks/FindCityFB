@@ -1,14 +1,14 @@
 table CityList {
-cityByCountryCode : [City];
-cityByName : [City];
+  cityByCountryCode : [City];
+  cityByName : [City];
 }
 
 table City {
-countryCode : string;
-searchName : string;
-name : string;
-latitude : float;
-longitude : float;
+  countryCode : string;
+  searchName : string;
+  name : string;
+  latitude : float;
+  longitude : float;
 }
 
 root_type CityList;

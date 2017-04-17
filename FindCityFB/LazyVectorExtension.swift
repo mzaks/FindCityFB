@@ -8,11 +8,11 @@
 
 import Foundation
 
-extension LazyVector {
+extension FlatBuffersTableVector {
     
-    public func itemsWithStringPrefix(prefix : String, stringExtractor : (T)->String) -> Range<Int> {
+    public func itemsWithStringPrefix(_ prefix : String, stringExtractor : @escaping (T)->String) -> CountableRange<Int> {
         
-        func start(_left : Int,_ _right : Int,_ _mid : Int) -> Int {
+        func start(_ _left : Int,_ _right : Int,_ _mid : Int) -> Int {
             var left = _left
             var right = _right
             var result = _mid
@@ -30,7 +30,7 @@ extension LazyVector {
             return result
         }
         
-        func end(_left : Int,_ _right : Int,_ _mid : Int) -> Int {
+        func end(_ _left : Int,_ _right : Int,_ _mid : Int) -> Int {
             var left = _left
             var right = _right
             var result = _mid
@@ -53,7 +53,7 @@ extension LazyVector {
         while((left <= right)) {
             let mid = (right + left) >> 1
             if(stringExtractor(self[mid]!).hasPrefix(prefix)){
-                return start(left, right, mid)...end(left, right, mid)
+                return start(left, right, mid)..<(end(left, right, mid)+1)
             } else if (stringExtractor(self[mid]!) <= prefix){
                 left = mid + 1
             } else {

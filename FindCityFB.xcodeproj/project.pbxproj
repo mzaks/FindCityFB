@@ -7,29 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B06A7A81EA51E8000D444CB /* cities.bin in Resources */ = {isa = PBXBuildFile; fileRef = 0B06A7A71EA51E8000D444CB /* cities.bin */; };
+		0B06A7AA1EA54FFB00D444CB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B06A7A91EA54FFB00D444CB /* BaseViewController.swift */; };
 		0B37FB3C1CCCAF5B00467D4F /* cityList.fbs in Resources */ = {isa = PBXBuildFile; fileRef = 0B37FB3B1CCCAF5B00467D4F /* cityList.fbs */; };
 		0B37FB401CCE8F7200467D4F /* LazyVectorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B37FB3F1CCE8F7200467D4F /* LazyVectorExtension.swift */; };
 		0B952AF31C98B5D1007D705A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B952AF21C98B5D1007D705A /* AppDelegate.swift */; };
-		0B952AF51C98B5D1007D705A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B952AF41C98B5D1007D705A /* ViewController.swift */; };
+		0B952AF51C98B5D1007D705A /* FileReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B952AF41C98B5D1007D705A /* FileReaderViewController.swift */; };
 		0B952AF81C98B5D1007D705A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B952AF61C98B5D1007D705A /* Main.storyboard */; };
 		0B952AFA1C98B5D1007D705A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B952AF91C98B5D1007D705A /* Assets.xcassets */; };
 		0B952AFD1C98B5D1007D705A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B952AFB1C98B5D1007D705A /* LaunchScreen.storyboard */; };
 		0B952B0A1C98B6E5007D705A /* cityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B952B071C98B6E5007D705A /* cityList.swift */; };
-		0B952B0B1C98B6E5007D705A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B952B081C98B6E5007D705A /* MapViewController.swift */; };
+		0B952B0B1C98B6E5007D705A /* MapViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B952B081C98B6E5007D705A /* MapViewControllers.swift */; };
+		0BBA4F9B1EA416430085C73B /* MemoryReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBA4F9A1EA416430085C73B /* MemoryReaderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B06A7A71EA51E8000D444CB /* cities.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = cities.bin; sourceTree = "<group>"; };
+		0B06A7A91EA54FFB00D444CB /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0B37FB3B1CCCAF5B00467D4F /* cityList.fbs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cityList.fbs; sourceTree = "<group>"; };
 		0B37FB3F1CCE8F7200467D4F /* LazyVectorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyVectorExtension.swift; sourceTree = "<group>"; };
 		0B952AEF1C98B5D1007D705A /* FindCityFB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindCityFB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B952AF21C98B5D1007D705A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0B952AF41C98B5D1007D705A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B952AF41C98B5D1007D705A /* FileReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReaderViewController.swift; sourceTree = "<group>"; };
 		0B952AF71C98B5D1007D705A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B952AF91C98B5D1007D705A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B952AFC1C98B5D1007D705A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B952AFE1C98B5D1007D705A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B952B071C98B6E5007D705A /* cityList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cityList.swift; sourceTree = "<group>"; };
-		0B952B081C98B6E5007D705A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0B952B081C98B6E5007D705A /* MapViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewControllers.swift; sourceTree = "<group>"; };
+		0BBA4F9A1EA416430085C73B /* MemoryReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryReaderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,7 @@
 		0B952AE61C98B5D1007D705A = {
 			isa = PBXGroup;
 			children = (
+				0B06A7A71EA51E8000D444CB /* cities.bin */,
 				0B952AF11C98B5D1007D705A /* FindCityFB */,
 				0B952AF01C98B5D1007D705A /* Products */,
 			);
@@ -63,15 +70,17 @@
 			isa = PBXGroup;
 			children = (
 				0B952B071C98B6E5007D705A /* cityList.swift */,
-				0B952B081C98B6E5007D705A /* MapViewController.swift */,
+				0B952B081C98B6E5007D705A /* MapViewControllers.swift */,
 				0B952AF21C98B5D1007D705A /* AppDelegate.swift */,
-				0B952AF41C98B5D1007D705A /* ViewController.swift */,
+				0B952AF41C98B5D1007D705A /* FileReaderViewController.swift */,
+				0BBA4F9A1EA416430085C73B /* MemoryReaderViewController.swift */,
+				0B37FB3F1CCE8F7200467D4F /* LazyVectorExtension.swift */,
 				0B952AF61C98B5D1007D705A /* Main.storyboard */,
 				0B952AF91C98B5D1007D705A /* Assets.xcassets */,
 				0B952AFB1C98B5D1007D705A /* LaunchScreen.storyboard */,
 				0B952AFE1C98B5D1007D705A /* Info.plist */,
 				0B37FB3B1CCCAF5B00467D4F /* cityList.fbs */,
-				0B37FB3F1CCE8F7200467D4F /* LazyVectorExtension.swift */,
+				0B06A7A91EA54FFB00D444CB /* BaseViewController.swift */,
 			);
 			path = FindCityFB;
 			sourceTree = "<group>";
@@ -103,11 +112,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = maxim.zaks;
 				TargetAttributes = {
 					0B952AEE1C98B5D1007D705A = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2DWW34DRKL;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -136,6 +147,7 @@
 			files = (
 				0B952AFD1C98B5D1007D705A /* LaunchScreen.storyboard in Resources */,
 				0B952AFA1C98B5D1007D705A /* Assets.xcassets in Resources */,
+				0B06A7A81EA51E8000D444CB /* cities.bin in Resources */,
 				0B37FB3C1CCCAF5B00467D4F /* cityList.fbs in Resources */,
 				0B952AF81C98B5D1007D705A /* Main.storyboard in Resources */,
 			);
@@ -148,11 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BBA4F9B1EA416430085C73B /* MemoryReaderViewController.swift in Sources */,
 				0B952B0A1C98B6E5007D705A /* cityList.swift in Sources */,
-				0B952AF51C98B5D1007D705A /* ViewController.swift in Sources */,
+				0B952AF51C98B5D1007D705A /* FileReaderViewController.swift in Sources */,
 				0B952AF31C98B5D1007D705A /* AppDelegate.swift in Sources */,
 				0B37FB401CCE8F7200467D4F /* LazyVectorExtension.swift in Sources */,
-				0B952B0B1C98B6E5007D705A /* MapViewController.swift in Sources */,
+				0B06A7AA1EA54FFB00D444CB /* BaseViewController.swift in Sources */,
+				0B952B0B1C98B6E5007D705A /* MapViewControllers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,10 +205,13 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Maxim Zaks (FNWXQG23P7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -214,7 +231,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -235,10 +252,13 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Maxim Zaks (FNWXQG23P7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -252,9 +272,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -263,10 +284,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2DWW34DRKL;
 				INFOPLIST_FILE = FindCityFB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = maxim.zaks.FindCityFB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -274,10 +297,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2DWW34DRKL;
 				INFOPLIST_FILE = FindCityFB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = maxim.zaks.FindCityFB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

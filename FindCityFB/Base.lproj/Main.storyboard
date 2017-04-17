@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1Od-m9-6FE">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1Od-m9-6FE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -15,27 +18,68 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zPV-t3-Lzh"/>
+                        <segue destination="8ay-Sb-pvD" kind="relationship" relationship="rootViewController" id="ORv-R6-2df"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uqw-x1-PpM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-574" y="371"/>
         </scene>
-        <!--Cities-->
+        <!--Find City-->
+        <scene sceneID="wtZ-Zc-iuJ">
+            <objects>
+                <viewController id="8ay-Sb-pvD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hXG-8k-vva"/>
+                        <viewControllerLayoutGuide type="bottom" id="QHc-ZC-xef"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G25-uy-IL7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gyr-cr-X4g">
+                                <rect key="frame" x="132.5" y="258.5" width="109" height="30"/>
+                                <state key="normal" title="Memory Reader"/>
+                                <connections>
+                                    <segue destination="kr8-8D-jpd" kind="show" id="mzN-bX-g9X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXp-Fr-05S">
+                                <rect key="frame" x="148.5" y="358.5" width="77" height="30"/>
+                                <state key="normal" title="File Reader"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="q8r-oO-fe5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gyr-cr-X4g" firstAttribute="centerX" secondItem="G25-uy-IL7" secondAttribute="centerX" id="Wcp-a3-FkO"/>
+                            <constraint firstItem="Gyr-cr-X4g" firstAttribute="centerY" secondItem="G25-uy-IL7" secondAttribute="centerY" constant="-60" id="es9-94-lSq"/>
+                            <constraint firstItem="rXp-Fr-05S" firstAttribute="centerY" secondItem="G25-uy-IL7" secondAttribute="centerY" constant="40" id="jdx-JY-R1T"/>
+                            <constraint firstItem="rXp-Fr-05S" firstAttribute="centerX" secondItem="G25-uy-IL7" secondAttribute="centerX" id="mrx-xI-Jiy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Find City" id="PG7-ah-MB4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AA4-Pe-gf8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-575" y="1165"/>
+        </scene>
+        <!--Cities File Reader-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FindCityFB" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FileReaderViewController" customModule="FindCityFB" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mNN-3N-AtU">
-                                <rect key="frame" x="211" y="37" width="179" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mNN-3N-AtU">
+                                <rect key="frame" x="98" y="81" width="179" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="5Eo-7G-1pB"/>
                                     <constraint firstAttribute="width" constant="179" id="DXB-00-bHC"/>
@@ -48,32 +92,32 @@
                                     <action selector="changeCategory:" destination="BYZ-38-t0r" eventType="valueChanged" id="Wez-h8-2ef"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="## Cities Found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izM-Nf-mOS">
-                                <rect key="frame" x="156" y="123" width="289" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="## Cities Found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izM-Nf-mOS">
+                                <rect key="frame" x="43" y="167" width="289" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="IJf-Ri-dXb"/>
                                     <constraint firstAttribute="width" constant="289" id="NJ2-FZ-OeX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mjq-pf-432">
-                                <rect key="frame" x="20" y="184" width="560" height="396"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mjq-pf-432">
+                                <rect key="frame" x="16" y="228" width="343" height="419"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="UiN-gS-tKy" style="IBUITableViewCellStyleDefault" id="RBi-xk-t0M">
-                                        <rect key="frame" x="0.0" y="28" width="560" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RBi-xk-t0M" id="SXO-Hx-mZK">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UiN-gS-tKy">
-                                                    <rect key="frame" x="15" y="0.0" width="530" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -88,8 +132,8 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="K9a-2s-ntN"/>
                                 </connections>
                             </tableView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="wkP-HQ-maI">
-                                <rect key="frame" x="156" y="85" width="289" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="wkP-HQ-maI">
+                                <rect key="frame" x="43" y="129" width="289" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="289" id="KFc-eZ-aMB"/>
                                     <constraint firstAttribute="height" constant="30" id="RUd-Ds-9d6"/>
@@ -103,7 +147,7 @@
                                 </connections>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="mjq-pf-432" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="AqM-cG-vOc"/>
                             <constraint firstItem="mNN-3N-AtU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CUi-mo-dwe"/>
@@ -117,7 +161,7 @@
                             <constraint firstItem="wkP-HQ-maI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wX9-jg-beb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Cities" id="FVi-FB-kBo"/>
+                    <navigationItem key="navigationItem" title="Cities File Reader" id="FVi-FB-kBo"/>
                     <connections>
                         <outlet property="numberOfCitiesLabel" destination="izM-Nf-mOS" id="0Bg-Ld-q75"/>
                         <outlet property="searchTextField" destination="wkP-HQ-maI" id="iIc-kV-Asp"/>
@@ -128,26 +172,26 @@
             </objects>
             <point key="canvasLocation" x="207" y="371"/>
         </scene>
-        <!--Map View Controller-->
+        <!--File Reader Map View Controller-->
         <scene sceneID="n1R-cP-b7E">
             <objects>
-                <viewController id="z4w-Mr-Xci" customClass="MapViewController" customModule="FindCityFB" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="z4w-Mr-Xci" customClass="FileReaderMapViewController" customModule="FindCityFB" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d4J-wo-T4I"/>
                         <viewControllerLayoutGuide type="bottom" id="x0D-iI-Qcc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Gqn-wz-Oi3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36E-gv-gaJ">
-                                <rect key="frame" x="20" y="70" width="560" height="508"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36E-gv-gaJ">
+                                <rect key="frame" x="16" y="72" width="343" height="575"/>
                                 <connections>
                                     <outlet property="delegate" destination="z4w-Mr-Xci" id="8r3-p8-puf"/>
                                 </connections>
                             </mapView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="36E-gv-gaJ" firstAttribute="top" secondItem="d4J-wo-T4I" secondAttribute="bottom" constant="8" id="77G-5U-wiH"/>
                             <constraint firstItem="36E-gv-gaJ" firstAttribute="trailing" secondItem="Gqn-wz-Oi3" secondAttribute="trailingMargin" id="Pdn-12-MOp"/>
@@ -162,6 +206,149 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WM1-TV-fV6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="970" y="371"/>
+        </scene>
+        <!--Cities Memory Reader-->
+        <scene sceneID="NQe-t8-i3d">
+            <objects>
+                <viewController id="kr8-8D-jpd" customClass="MemoryReaderViewController" customModule="FindCityFB" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NRW-yJ-lWe"/>
+                        <viewControllerLayoutGuide type="bottom" id="1x7-zK-I25"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DVQ-pB-3wV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TFI-tL-0XI">
+                                <rect key="frame" x="98" y="81" width="179" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="U61-Yp-gLl"/>
+                                    <constraint firstAttribute="width" constant="179" id="wcn-SM-ZhJ"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="By Country"/>
+                                    <segment title="By Name"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeCategory:" destination="kr8-8D-jpd" eventType="valueChanged" id="kkN-Zw-awd"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="## Cities Found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDU-b4-qTL">
+                                <rect key="frame" x="43" y="167" width="289" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="pef-fT-sII"/>
+                                    <constraint firstAttribute="width" constant="289" id="qkr-jU-Bus"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="thX-VS-kuB">
+                                <rect key="frame" x="16" y="228" width="343" height="419"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="i1o-33-NnW" style="IBUITableViewCellStyleDefault" id="GR7-Np-gGo">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GR7-Np-gGo" id="r51-c1-FeV">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i1o-33-NnW">
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="bxy-1G-5JM" kind="show" id="ZbL-Zd-eBs">
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="kr8-8D-jpd" id="nOu-iS-6tn"/>
+                                    <outlet property="delegate" destination="kr8-8D-jpd" id="I87-gf-Thb"/>
+                                </connections>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="pgv-iM-S1t">
+                                <rect key="frame" x="43" y="129" width="289" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="289" id="38Q-6E-mrn"/>
+                                    <constraint firstAttribute="height" constant="30" id="mQP-ke-r0p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="closeKeyboard:" destination="kr8-8D-jpd" eventType="editingDidEndOnExit" id="DFe-LX-GRn"/>
+                                    <action selector="searchTermChanged:" destination="kr8-8D-jpd" eventType="editingChanged" id="WmC-Nl-Mzf"/>
+                                    <action selector="searchTermChanged:" destination="kr8-8D-jpd" eventType="valueChanged" id="z0S-KW-UjP"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zDU-b4-qTL" firstAttribute="centerX" secondItem="DVQ-pB-3wV" secondAttribute="centerX" id="0oD-Wy-KRq"/>
+                            <constraint firstItem="TFI-tL-0XI" firstAttribute="top" secondItem="NRW-yJ-lWe" secondAttribute="bottom" constant="17" id="2RN-T3-mq1"/>
+                            <constraint firstItem="pgv-iM-S1t" firstAttribute="centerX" secondItem="DVQ-pB-3wV" secondAttribute="centerX" id="Egv-JM-p3P"/>
+                            <constraint firstItem="pgv-iM-S1t" firstAttribute="top" secondItem="TFI-tL-0XI" secondAttribute="bottom" constant="20" id="UBv-Qt-3gO"/>
+                            <constraint firstItem="thX-VS-kuB" firstAttribute="top" secondItem="zDU-b4-qTL" secondAttribute="bottom" constant="40" id="UKX-Py-6zI"/>
+                            <constraint firstItem="1x7-zK-I25" firstAttribute="top" secondItem="thX-VS-kuB" secondAttribute="bottom" constant="20" id="WrP-QX-VXk"/>
+                            <constraint firstItem="thX-VS-kuB" firstAttribute="leading" secondItem="DVQ-pB-3wV" secondAttribute="leadingMargin" id="YPS-0z-G7I"/>
+                            <constraint firstItem="TFI-tL-0XI" firstAttribute="centerX" secondItem="DVQ-pB-3wV" secondAttribute="centerX" id="cNz-D0-hFp"/>
+                            <constraint firstItem="thX-VS-kuB" firstAttribute="trailing" secondItem="DVQ-pB-3wV" secondAttribute="trailingMargin" id="mn1-Z9-IFz"/>
+                            <constraint firstItem="zDU-b4-qTL" firstAttribute="top" secondItem="pgv-iM-S1t" secondAttribute="bottom" constant="8" id="xce-gx-8DY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cities Memory Reader" id="Qmj-g0-c7d"/>
+                    <connections>
+                        <outlet property="numberOfCitiesLabel" destination="zDU-b4-qTL" id="30d-rU-eR3"/>
+                        <outlet property="searchTextField" destination="pgv-iM-S1t" id="V3E-Y5-MW4"/>
+                        <outlet property="tableView" destination="thX-VS-kuB" id="zsf-YC-vgG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VyF-Nw-30Z" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="206" y="1164"/>
+        </scene>
+        <!--Memory Reader Map View Controller-->
+        <scene sceneID="Y3m-In-zeZ">
+            <objects>
+                <viewController id="bxy-1G-5JM" customClass="MemoryReaderMapViewController" customModule="FindCityFB" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UhG-r4-ATu"/>
+                        <viewControllerLayoutGuide type="bottom" id="sOC-cW-ZJD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SRs-HT-6Io">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TA-c0-i71">
+                                <rect key="frame" x="16" y="72" width="343" height="575"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bxy-1G-5JM" id="Jiu-vR-lm9"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3TA-c0-i71" firstAttribute="leading" secondItem="SRs-HT-6Io" secondAttribute="leadingMargin" id="9bg-J1-X7s"/>
+                            <constraint firstItem="3TA-c0-i71" firstAttribute="top" secondItem="UhG-r4-ATu" secondAttribute="bottom" constant="8" id="Qtp-fs-IFh"/>
+                            <constraint firstItem="sOC-cW-ZJD" firstAttribute="top" secondItem="3TA-c0-i71" secondAttribute="bottom" constant="20" id="f10-1W-4DZ"/>
+                            <constraint firstItem="3TA-c0-i71" firstAttribute="trailing" secondItem="SRs-HT-6Io" secondAttribute="trailingMargin" id="rRU-Aj-OLh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="3TA-c0-i71" id="3og-Fd-0qE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XOS-JA-yFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969" y="1164"/>
         </scene>
     </scenes>
 </document>
