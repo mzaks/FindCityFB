@@ -72,13 +72,12 @@ class FileReaderViewController: BaseViewController, UITableViewDataSource, UITab
         } else {
             if category == 0 {
                 range = cityList.itemsWithStringPrefix(text.lowercased()){
-                    guard let p = $0.countryCode else { return "" }
-                    return (p§) ?? ""
+                    return $0?.countryCode
                 }
             } else {
                 range = cityList.itemsWithStringPrefix(text.lowercased()){
-                    guard let p = $0.searchName else { return "" }
-                    return (p§) ?? ""
+                    return $0?.searchName
+
                 }
             }
         }
