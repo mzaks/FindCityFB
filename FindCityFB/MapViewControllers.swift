@@ -10,33 +10,19 @@ import UIKit
 import MapKit
 import CoreLocation
 
-
-class FileReaderMapViewController: UIViewController {
-    var city : City_Direct<FlatBuffersFileReader>! = nil
+class MapViewController: UIViewController {
+    var name: String!
+    var countryCode: String!
+    var lng: Double!
+    var lat: Double!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let location = CLLocationCoordinate2D(latitude: Double(city.latitude), longitude: Double(city.longitude))
+        let location = CLLocationCoordinate2D(latitude: lat, longitude: lng)
         let region = MKCoordinateRegionMakeWithDistance (location, 10000, 10000)
         
-        self.title = "\((city.name!§)!) in \((city.countryCode!§)!)"
-        
-        map.setRegion(region, animated: true)
-    }
-    @IBOutlet weak var map: MKMapView!
-}
-
-class MemoryReaderMapViewController: UIViewController {
-    var city : City_Direct<FlatBuffersMemoryReader>! = nil
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let location = CLLocationCoordinate2D(latitude: Double(city.latitude), longitude: Double(city.longitude))
-        let region = MKCoordinateRegionMakeWithDistance (location, 10000, 10000)
-        
-        self.title = "\((city.name!§)!) in \((city.countryCode!§)!)"
+        self.title = "\(name!) in \(countryCode!)"
         
         map.setRegion(region, animated: true)
     }

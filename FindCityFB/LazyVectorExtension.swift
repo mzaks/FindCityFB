@@ -8,11 +8,11 @@
 
 import Foundation
 
+enum PrefixResult {
+    case Equal, Smaller, Bigger
+}
+
 extension FlatBuffersTableVector {
-    
-    enum PrefixResult {
-        case Equal, Smaller, Bigger
-    }
     
     public func itemsWithStringPrefix(_ prefix : String, bufferExtractor : @escaping (T?)->UnsafeBufferPointer<UInt8>?) -> CountableRange<Int> {
         

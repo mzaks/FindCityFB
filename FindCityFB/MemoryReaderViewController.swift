@@ -59,9 +59,13 @@ class MemoryReaderViewController: BaseViewController, UITableViewDataSource, UIT
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let cell = sender as? UITableViewCell,
             let indexPath = tableView.indexPath(for: cell),
-            let mapVC = segue.destination as? MemoryReaderMapViewController {
+            let mapVC = segue.destination as? MapViewController {
             
-            mapVC.city = cityList[indexPath.row + (range.first ?? 0)]
+            let city = cityList[indexPath.row + (range.first ?? 0)]
+            mapVC.name = (city!.name!§)!
+            mapVC.countryCode = (city!.countryCode!§)!
+            mapVC.lng = Double(city!.longitude)
+            mapVC.lat = Double(city!.latitude)
         }
     }
     

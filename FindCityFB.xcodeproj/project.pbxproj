@@ -9,8 +9,17 @@
 /* Begin PBXBuildFile section */
 		0B06A7A81EA51E8000D444CB /* cities.bin in Resources */ = {isa = PBXBuildFile; fileRef = 0B06A7A71EA51E8000D444CB /* cities.bin */; };
 		0B06A7AA1EA54FFB00D444CB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B06A7A91EA54FFB00D444CB /* BaseViewController.swift */; };
-		0B37FB3C1CCCAF5B00467D4F /* cityList.fbs in Resources */ = {isa = PBXBuildFile; fileRef = 0B37FB3B1CCCAF5B00467D4F /* cityList.fbs */; };
 		0B37FB401CCE8F7200467D4F /* LazyVectorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B37FB3F1CCE8F7200467D4F /* LazyVectorExtension.swift */; };
+		0B450A601F9A3986000E011A /* cities.bc in Resources */ = {isa = PBXBuildFile; fileRef = 0B450A5F1F9A3986000E011A /* cities.bc */; };
+		0B450A681F9A3B0A000E011A /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B450A611F9A3B09000E011A /* Alignment.swift */; };
+		0B450A691F9A3B0A000E011A /* BitSetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B450A621F9A3B09000E011A /* BitSetStore.swift */; };
+		0B450A6A1F9A3B0A000E011A /* Compartment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B450A631F9A3B09000E011A /* Compartment.swift */; };
+		0B450A6B1F9A3B0A000E011A /* StringStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B450A641F9A3B09000E011A /* StringStore.swift */; };
+		0B450A6C1F9A3B0A000E011A /* NumberStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B450A651F9A3B09000E011A /* NumberStore.swift */; };
+		0B450A6D1F9A3B0A000E011A /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B450A661F9A3B09000E011A /* DataStore.swift */; };
+		0B450A6E1F9A3B0A000E011A /* ByteCabinet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B450A671F9A3B0A000E011A /* ByteCabinet.swift */; };
+		0B450A711F9A3B6F000E011A /* ByteCabinetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B450A701F9A3B6F000E011A /* ByteCabinetViewController.swift */; };
+		0B7B34821FAF3F9300F66493 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7B34811FAF3F9300F66493 /* MenuViewController.swift */; };
 		0B952AF31C98B5D1007D705A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B952AF21C98B5D1007D705A /* AppDelegate.swift */; };
 		0B952AF51C98B5D1007D705A /* FileReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B952AF41C98B5D1007D705A /* FileReaderViewController.swift */; };
 		0B952AF81C98B5D1007D705A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B952AF61C98B5D1007D705A /* Main.storyboard */; };
@@ -26,6 +35,16 @@
 		0B06A7A91EA54FFB00D444CB /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0B37FB3B1CCCAF5B00467D4F /* cityList.fbs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cityList.fbs; sourceTree = "<group>"; };
 		0B37FB3F1CCE8F7200467D4F /* LazyVectorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyVectorExtension.swift; sourceTree = "<group>"; };
+		0B450A5F1F9A3986000E011A /* cities.bc */ = {isa = PBXFileReference; lastKnownFileType = file; path = cities.bc; sourceTree = "<group>"; };
+		0B450A611F9A3B09000E011A /* Alignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alignment.swift; sourceTree = "<group>"; };
+		0B450A621F9A3B09000E011A /* BitSetStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitSetStore.swift; sourceTree = "<group>"; };
+		0B450A631F9A3B09000E011A /* Compartment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compartment.swift; sourceTree = "<group>"; };
+		0B450A641F9A3B09000E011A /* StringStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringStore.swift; sourceTree = "<group>"; };
+		0B450A651F9A3B09000E011A /* NumberStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberStore.swift; sourceTree = "<group>"; };
+		0B450A661F9A3B09000E011A /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		0B450A671F9A3B0A000E011A /* ByteCabinet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteCabinet.swift; sourceTree = "<group>"; };
+		0B450A701F9A3B6F000E011A /* ByteCabinetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteCabinetViewController.swift; sourceTree = "<group>"; };
+		0B7B34811FAF3F9300F66493 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		0B952AEF1C98B5D1007D705A /* FindCityFB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindCityFB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B952AF21C98B5D1007D705A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B952AF41C98B5D1007D705A /* FileReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReaderViewController.swift; sourceTree = "<group>"; };
@@ -49,9 +68,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B450A6F1F9A3B0F000E011A /* ByteCabinet */ = {
+			isa = PBXGroup;
+			children = (
+				0B450A611F9A3B09000E011A /* Alignment.swift */,
+				0B450A621F9A3B09000E011A /* BitSetStore.swift */,
+				0B450A671F9A3B0A000E011A /* ByteCabinet.swift */,
+				0B450A631F9A3B09000E011A /* Compartment.swift */,
+				0B450A661F9A3B09000E011A /* DataStore.swift */,
+				0B450A651F9A3B09000E011A /* NumberStore.swift */,
+				0B450A641F9A3B09000E011A /* StringStore.swift */,
+			);
+			path = ByteCabinet;
+			sourceTree = "<group>";
+		};
 		0B952AE61C98B5D1007D705A = {
 			isa = PBXGroup;
 			children = (
+				0B450A5F1F9A3986000E011A /* cities.bc */,
 				0B06A7A71EA51E8000D444CB /* cities.bin */,
 				0B952AF11C98B5D1007D705A /* FindCityFB */,
 				0B952AF01C98B5D1007D705A /* Products */,
@@ -69,6 +103,7 @@
 		0B952AF11C98B5D1007D705A /* FindCityFB */ = {
 			isa = PBXGroup;
 			children = (
+				0B450A6F1F9A3B0F000E011A /* ByteCabinet */,
 				0B952B071C98B6E5007D705A /* cityList.swift */,
 				0B952B081C98B6E5007D705A /* MapViewControllers.swift */,
 				0B952AF21C98B5D1007D705A /* AppDelegate.swift */,
@@ -81,6 +116,8 @@
 				0B952AFE1C98B5D1007D705A /* Info.plist */,
 				0B37FB3B1CCCAF5B00467D4F /* cityList.fbs */,
 				0B06A7A91EA54FFB00D444CB /* BaseViewController.swift */,
+				0B450A701F9A3B6F000E011A /* ByteCabinetViewController.swift */,
+				0B7B34811FAF3F9300F66493 /* MenuViewController.swift */,
 			);
 			path = FindCityFB;
 			sourceTree = "<group>";
@@ -148,7 +185,7 @@
 				0B952AFD1C98B5D1007D705A /* LaunchScreen.storyboard in Resources */,
 				0B952AFA1C98B5D1007D705A /* Assets.xcassets in Resources */,
 				0B06A7A81EA51E8000D444CB /* cities.bin in Resources */,
-				0B37FB3C1CCCAF5B00467D4F /* cityList.fbs in Resources */,
+				0B450A601F9A3986000E011A /* cities.bc in Resources */,
 				0B952AF81C98B5D1007D705A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,12 +197,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B450A6D1F9A3B0A000E011A /* DataStore.swift in Sources */,
 				0BBA4F9B1EA416430085C73B /* MemoryReaderViewController.swift in Sources */,
+				0B450A681F9A3B0A000E011A /* Alignment.swift in Sources */,
+				0B450A6C1F9A3B0A000E011A /* NumberStore.swift in Sources */,
+				0B450A6E1F9A3B0A000E011A /* ByteCabinet.swift in Sources */,
+				0B450A6B1F9A3B0A000E011A /* StringStore.swift in Sources */,
 				0B952B0A1C98B6E5007D705A /* cityList.swift in Sources */,
+				0B7B34821FAF3F9300F66493 /* MenuViewController.swift in Sources */,
 				0B952AF51C98B5D1007D705A /* FileReaderViewController.swift in Sources */,
 				0B952AF31C98B5D1007D705A /* AppDelegate.swift in Sources */,
 				0B37FB401CCE8F7200467D4F /* LazyVectorExtension.swift in Sources */,
+				0B450A6A1F9A3B0A000E011A /* Compartment.swift in Sources */,
 				0B06A7AA1EA54FFB00D444CB /* BaseViewController.swift in Sources */,
+				0B450A711F9A3B6F000E011A /* ByteCabinetViewController.swift in Sources */,
+				0B450A691F9A3B0A000E011A /* BitSetStore.swift in Sources */,
 				0B952B0B1C98B6E5007D705A /* MapViewControllers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

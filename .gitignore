@@ -64,3 +64,4 @@ fastlane/screenshots
 
 # Ignoring bin file because it is bigger than 100 MB
 *.bin
+cities.bc
