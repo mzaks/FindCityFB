@@ -18,7 +18,7 @@ class ByteCabinetViewController: BaseViewController, UITableViewDataSource, UITa
     // MARK: ViewController stuff
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Don't forget to download the cities.bin from https://www.dropbox.com/s/tk1uff3ozr9asxz/cities.bin?dl=0
+        // Don't forget to download the cities.bc from https://www.dropbox.com/s/sg1287n2zx0x1w1/cities.bc?dl=0
         let url = Bundle.main.url(forResource: "cities", withExtension: "bc")!
         
         if loadFromFile {
